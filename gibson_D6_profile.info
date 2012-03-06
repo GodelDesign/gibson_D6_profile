@@ -1,0 +1,98 @@
+name = gibson_D6 Core
+description = A template for a working Drupal 6 Install Profile that can be easily extended for clients.
+core = 6.x
+
+
+
+; -- Dependencies --
+
+; Custom dependencies
+; dependencies[] = template_d6_global
+; dependencies[] = template_d6_blog
+
+; Contrib dependencies
+
+; Administration
+dependencies[] = admin
+
+; CCK
+dependencies[] = fieldgroup
+dependencies[] = filefield
+dependencies[] = imagefield
+dependencies[] = nodereference
+dependencies[] = number
+dependencies[] = optionwidgets
+dependencies[] = text
+dependencies[] = userreference
+
+; Chaos Tools
+dependencies[] = ctools
+dependencies[] = page_manager
+
+; Core - Optional
+dependencies[] = menu
+dependencies[] = path
+dependencies[] = php
+dependencies[] = taxonomy
+
+; Features
+dependencies[] = features
+
+; Filefield Paths
+dependencies[] = filefield_paths
+
+; Imagecache
+dependencies[] = imageapi
+dependencies[] = imageapi_gd
+dependencies[] = imagecache
+dependencies[] = imagecache_ui
+dependencies[] = smartcrop
+
+; Node Form Columns
+dependencies[] = nodeformcols
+
+; Other
+dependencies[] = better_formats
+dependencies[] = less
+dependencies[] = menutrails
+dependencies[] = menu_block
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = diff
+
+; Pressflow
+dependencies[] = path_alias_cache
+
+; Statistics
+dependencies[] = googleanalytics
+
+; User Interface
+dependencies[] = jquery_update
+dependencies[] = jquery_ui
+dependencies[] = wysiwyg
+
+; Views
+dependencies[] = views
+dependencies[] = views_ui
+
+; Webform
+dependencies[] = webform
+
+; -- Theme --
+
+theme = tao
+
+; -- Users --
+
+users[test_staff][uid] = 2
+users[test_staff][name] = test_staff
+users[test_staff][mail] = dev+test_staff@godeldesign.com
+users[test_staff][roles] = staff
+users[test_staff][status] = 1
+
+users[test_user][uid] = 3
+users[test_user][name] = test_user
+users[test_user][mail] = dev+test_user@godeldesign.com
+users[test_user][status] = 1
