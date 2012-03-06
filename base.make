@@ -9,10 +9,10 @@ libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profi
 
 ; Godel starter theme
 
-projects[gibson_theme][type] = theme
-projects[gibson_theme][download][type] = "git"
-projects[gibson_theme][download][url] = "git://github.com/godel-design/gibson_theme.git"
-projects[gibson_theme][subdir] = "custom"
+projects[CLIENTNAME_theme][type] = theme
+projects[CLIENTNAME_theme][download][type] = "git"
+projects[CLIENTNAME_theme][download][url] = "git://github.com/godel-design/CLIENTNAME_theme.git"
+projects[CLIENTNAME_theme][subdir] = "custom"
 
 ; Template Features
 
