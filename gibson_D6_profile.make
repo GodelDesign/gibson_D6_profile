@@ -14,14 +14,14 @@ includes[base] = base.make
 
 ; projects[example][type] = theme
 ; projects[example][download][type] = "git"
-; projects[example][download][url] = "git://github.com/godel-design/CLIENTNAME_theme.git"
+; projects[example][download][url] = "git://github.com/godel-design/gibson_theme.git"
 ; projects[example][subdir] = "custom"
 
 ; --Custom Modules--
 
 ; projects[example][type] = module
 ; projects[example][download][type] = "git"
-; projects[example][download][url] = "git://github.com/godel-design/CLIENTNAME_theme.git"
+; projects[example][download][url] = "git://github.com/godel-design/gibson_theme.git"
 ; projects[example][subdir] = "custom"
 
 ; --Patches--

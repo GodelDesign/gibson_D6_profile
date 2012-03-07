@@ -9,22 +9,22 @@ libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profi
 
 ; Godel starter theme
 
-projects[CLIENTNAME_theme][type] = theme
-projects[CLIENTNAME_theme][download][type] = "git"
-projects[CLIENTNAME_theme][download][url] = "git://github.com/godel-design/CLIENTNAME_theme.git"
-projects[CLIENTNAME_theme][subdir] = "custom"
+; projects[gibson_theme][type] = theme
+; projects[gibson_theme][download][type] = "git"
+; projects[gibson_theme][download][url] = "git://github.com/godel-design/gibson_theme.git"
+; projects[gibson_theme][subdir] = "custom"
 
 ; Template Features
 
- projects[template_d6_global][type] = module
- projects[template_d6_global][download][type] = "git"
- projects[template_d6_global][download][url] = "git://github.com/godel-design/template_d6_global.git"
- projects[template_d6_global][subdir] = "custom"
+ ; projects[template_d6_global][type] = module
+ ; projects[template_d6_global][download][type] = "git"
+ ; projects[template_d6_global][download][url] = "git://github.com/godel-design/template_d6_global.git"
+ ; projects[template_d6_global][subdir] = "custom"
 
- projects[template_d6_blog][type] = module
- projects[template_d6_blog][download][type] = "git"
- projects[template_d6_blog][download][url] = "git://github.com/godel-design/template_d6_blog.git"
- projects[template_d6_blog][subdir] = "custom"
+ ; projects[template_d6_blog][type] = module
+ ; projects[template_d6_blog][download][type] = "git"
+ ; projects[template_d6_blog][download][url] = "git://github.com/godel-design/template_d6_blog.git"
+ ; projects[template_d6_blog][subdir] = "custom"
 
 ; Modules used in at least 95% of all projects that aren't already part of BOA
 

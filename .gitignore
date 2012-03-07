@@ -1,0 +1,9 @@
+$ cat .gitignore
+
+.DS_Store
+libraries
+modules
+themes
+includes
+!/modules/custom
+!/themes/custom
