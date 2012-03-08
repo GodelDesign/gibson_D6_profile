@@ -2,8 +2,14 @@ $ cat .gitignore
 
 .DS_Store
 libraries
-modules
-themes
+
+!modules/
+!themes/
+
+modules/*
+!modules/custom/
+
+themes/*
+!themes/custom/
+
 includes
-!/modules/custom
-!/themes/custom

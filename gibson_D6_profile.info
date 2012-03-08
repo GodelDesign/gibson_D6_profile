@@ -80,6 +80,10 @@ dependencies[] = views_ui
 ; Webform
 dependencies[] = webform
 
+; Context
+dependencies[] = context_ui
+dependencies[] = context
+
 ; -- Theme --
 
 theme = tao

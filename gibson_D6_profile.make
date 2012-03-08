@@ -42,6 +42,10 @@ includes[base] = base.make
 ; projects[example][version] = "3.9"
 ; projects[example][subdir] = "contrib"
 
+projects[context][version] = "3.0"
+projects[context][subdir] = "contrib"
+
+
 ; Dev Snapshot
 
 ; projects[example][download][type] = "git"
