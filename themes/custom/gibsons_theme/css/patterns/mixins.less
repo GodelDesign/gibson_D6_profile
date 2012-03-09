@@ -1,0 +1,13 @@
+/* normalizing vendor prefixes */
+
+@box-sizing(@rule) {
+	-webkit-box-sizing: @rule;
+	-moz-box-sizing: @rule;
+	-ms-box-sizing: @rule;
+	box-sizing: @rule;
+}
+
+/* background images */
+@background-image(@image) {
+	background-image:url('../../images/{@image}');
+}

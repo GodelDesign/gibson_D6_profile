@@ -1,0 +1,23 @@
+As far as themes go, this one is pretty hard to install.. but that's still not saying much.
+
+Method 1 (Easy) - Using Aegir:
+
+Step 1 - Include the following in your make file (note that this is included in core-003.make and above for convenience):
+
+projects[gibson_theme][type] = theme
+projects[gibson_theme][download][type] = "git"
+projects[gibson_theme][download][url] = "git://github.com/godel-design/gibson_theme.git"
+projects[gibson_theme][subdir] = "custom"
+
+Step 2: Point the theme folder at a new git repo before you start work on it - Please don't be committing your subsequent changes back to the communal gibson_theme repo
+
+Step 3: Replace all instances of "gibson" in the project with the actual name of the client you're using this for. Make it lowercase, don't forget filenames.
+
+Method 2 (Tedious) - Manual
+
+Step 1: Install the Tao Theme - http://drupal.org/project/tao
+Step 2: Upload gibson_theme to the relevant "themes/custom" folder (you may need to check it out of git first)
+Step 4: Install the LESS Module - http://drupal.org/project/less
+Step 5: Patch the LESS Module - http://drupal.org/node/1286754
+Step 5: Replace all instances of "gibson" in the project with the actual name of the client you're using this for
+Step 6: Point the theme folder at a new git repo
