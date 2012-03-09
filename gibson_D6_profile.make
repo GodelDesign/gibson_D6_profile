@@ -45,6 +45,24 @@ includes[base] = base.make
 projects[context][version] = "3.0"
 projects[context][subdir] = "contrib"
 
+projects[panels][version] = "3.10"
+projects[panels][subdir] = "contrib"
+
+projects[ds][version] = "2.3"
+projects[ds][subdir] = "contrib"
+
+projects[nd][version] = "2.9"
+projects[nd][subdir] = "contrib"
+
+projects[nd_contrib][version] = "2.9"
+projects[nd_contrib][subdir] = "contrib"
+
+projects[uuid][version] = "1.0-beta2"
+projects[uuid][subdir] = "contrib"
+
+projects[uuid_features][version] = "1.0-alpha1"
+projects[uuid_features][subdir] = "contrib"
+
 
 ; Dev Snapshot
 

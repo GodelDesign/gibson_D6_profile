@@ -84,6 +84,21 @@ dependencies[] = webform
 dependencies[] = context_ui
 dependencies[] = context
 
+; Panels
+dependencies[] = panels_mini
+dependencies[] = panels_ipe
+
+; Display Suite
+dependencies[] = ds
+dependencies[] = ds_ui
+dependencies[] = nd
+dependencies[] = nd_cck
+dependencies[] = nd_webform
+
+; UUID
+dependencies[] = uuid
+dependencies[] = uuid_features
+
 ; -- Theme --
 
 theme = tao

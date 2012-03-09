@@ -1,0 +1,4 @@
+name = gibson_primary_menu
+description = Creates a block containing the links for the gibson_primary_menu
+package = Other
+core = 6.x

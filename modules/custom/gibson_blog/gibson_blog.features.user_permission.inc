@@ -36,5 +36,11 @@ function gibson_blog_user_default_permissions() {
     'roles' => array(),
   );
 
+  // Exported permission: view imagecache blog-image
+  $permissions['view imagecache blog-image'] = array(
+    'name' => 'view imagecache blog-image',
+    'roles' => array(),
+  );
+
   return $permissions;
 }

@@ -1,0 +1,26 @@
+<?php
+
+function gibson_primary_menu_block($op = 'list', $delta = 0, $edit = array()) {
+  global $user;
+  $block = array();
+
+  switch ($op) {
+    case 'list':
+        $block['primary_menu']['info'] = t('Primary Menu Block');
+        break;
+
+    case 'view':
+        $blockcontent = '';
+
+		$blockcontent .= l(t("Don't you know who i am?"), 'content/dont-you-know-who-i-am', array('attributes' => array('class' => 'menu-link m1')));
+		$blockcontent .= l(t('Winter 11'), 'gallery', array('attributes' => array('class' => 'menu-link m1')));
+		$blockcontent .= l(t('Papparazzi'), 'papparazzi', array('attributes' => array('class' => 'menu-link m3')));
+		$blockcontent .= l(t("Where the party's at"), 'where-the-partys-at', array('attributes' => array('class' => 'menu-link m4')));
+		$blockcontent .= l(t('Call me'), 'content/call-me', array('attributes' => array('class' => 'menu-link m5')));
+			
+	    $block['subject'] = t('');			
+	    $block['content'] = $blockcontent;
+	    break;	
+  }
+	return $block;
+}
