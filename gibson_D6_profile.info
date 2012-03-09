@@ -7,8 +7,8 @@ core = 6.x
 ; -- Dependencies --
 
 ; Custom dependencies
-; dependencies[] = template_d6_global
-; dependencies[] = template_d6_blog
+ dependencies[] = template_d6_global
+ dependencies[] = template_d6_blog
 
 ; Contrib dependencies
 
