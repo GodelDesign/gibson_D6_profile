@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Features include.
+ */
+include_once('template_d6_global.features.inc');
+
+/**
+ * Include additional files.
+ */
+foreach (module_list() as $module) {
+  if (file_exists($file = dirname(__FILE__) . "/includes/{$module}.inc")) {
+    require_once $file;
+  }
+}
+
+function template_d6_global_menu() {
+  $items = array();
+  
+  $items['front'] = array(
+    'title' => 'Front',
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('access content'),
+    'page callback' => 'blank_page',
+  );
+
+$items['call-me'] = array(
+  'title' => 'Call Me',
+  'type' => MENU_CALLBACK,
+  'access arguments' => array('access content'),
+  'page callback' => 'blank_page',
+);
+
+
+  return $items;
+}
+
+function blank_page() {
+  return '';
+}
+

@@ -1,0 +1,41 @@
+; The name and description of the theme used on the admin/build/themes page.
+name        = gibson Theme
+description = This theme is a starter kit built on Development Seed's Tao + Twitter's Bootstrap + The LESS CSS Framework
+
+core       = 6.x
+base theme = tao
+
+; The screenshot used on the admin/build/themes page.
+screenshot = screenshot.png
+
+; Note that reset.css does not exist where the next two lines claim
+; This is to override Tao's reset so we can include Twitter's, which provides stronger cross-browser normalisation
+stylesheets[screen][] = "reset.css"
+stylesheets[print][] = "reset.css"
+
+; Tao recommends that we be explicit about both screen and print media queries, instead of using "all"
+ stylesheets[screen][] = css/stub.less
+ stylesheets[print][] = css/stub.less
+
+; Bootstrap is intended for use with a different LESS compiler than what we're using
+; We include but do not attempt to parse the rules in "help-computer.css"
+stylesheets[all][] = "css/help-computer.css";
+
+; Set the conditional stylesheets that are processed by IE - Commented out by default, try to avoid using them
+; conditional-stylesheets[if IE][all][]       = css/ie/ie.less
+; conditional-stylesheets[if lte IE 8][all][] = css/ie/ie8.less
+; conditional-stylesheets[if lte IE 7][all][] = css/ie/ie7.less
+
+; General purpose javascript
+scripts[] = js/script.js
+scripts[] = js/jquery.carouFredSel.js
+
+; Regions should be set here and leveraged via Context
+regions[header] = "Header"
+regions[content_above] = "Content Above"
+regions[left] = "Left sidebar"
+regions[right] = "Right sidebar"
+regions[content] = "Content"
+regions[content_below] = "Content Below"
+regions[footer] = "Footer"
+regions[page_top] = "Page Top"
