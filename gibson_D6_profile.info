@@ -8,7 +8,7 @@ core = 6.x
 
 ; Custom dependencies
  dependencies[] = template_d6_global
- dependencies[] = template_d6_blog
+ dependencies[] = gibson_primary_menu
 
 ; Contrib dependencies
 

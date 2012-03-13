@@ -39,7 +39,7 @@
 			align: "centre",
 			height: "auto",
 			items: {
-				visible: 6,
+				visible: 3,
 				width: "variable",
 				height: "variable"
 			}, 
