@@ -51,7 +51,7 @@ function template_d6_global_imagecache_default_presets() {
           'action' => 'imagecache_scale',
           'data' => array(
             'width' => '',
-            'height' => '400',
+            'height' => '500',
             'upscale' => 1,
           ),
         ),
@@ -68,6 +68,28 @@ function template_d6_global_node_info() {
   $items = array(
     'gallery_image' => array(
       'name' => t('Gallery Image'),
+      'module' => 'features',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'has_body' => '1',
+      'body_label' => t('Body'),
+      'min_word_count' => '0',
+      'help' => '',
+    ),
+    'gallery_name' => array(
+      'name' => t('Gallery Name'),
+      'module' => 'features',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'has_body' => '1',
+      'body_label' => t('Body'),
+      'min_word_count' => '0',
+      'help' => '',
+    ),
+    'gibson_background_image' => array(
+      'name' => t('Background Image'),
       'module' => 'features',
       'description' => '',
       'has_title' => '1',

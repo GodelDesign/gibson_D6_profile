@@ -31,7 +31,11 @@ function template_d6_global_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = FALSE;
-  $handler->display->display_options['header']['area']['content'] = '<h1>Winter 11</h1>';
+  $handler->display->display_options['header']['area']['content'] = '<h1><?php 
+$gallery_name = node_get_by_uuid(\'e0d10b68-7702-11e1-bcca-adfbe380d8bb\');
+print_r($gallery_name->field_gallery_title[0][\'value\']);
+?></h1>
+';
   $handler->display->display_options['header']['area']['format'] = '3';
   $handler->display->display_options['header']['area']['tokenize'] = 0;
   /* Footer: Global: Text area */
@@ -114,6 +118,14 @@ function template_d6_global_views_default_views() {
   $handler->display->display_options['fields']['field_gallery_image_fid']['link_to_node'] = 0;
   $handler->display->display_options['fields']['field_gallery_image_fid']['label_type'] = 'none';
   $handler->display->display_options['fields']['field_gallery_image_fid']['format'] = 'gallery-image_default';
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter: Node: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'gallery_image' => 'gallery_image',
+  );
   $handler->display->display_options['path'] = 'gallery';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'gallery';

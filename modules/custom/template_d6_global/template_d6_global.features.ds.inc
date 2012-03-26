@@ -34,6 +34,34 @@ function template_d6_global_ds_default_settings() {
           ),
         ),
       ),
+      'webform' => array(
+        'full' => array(
+          'fields' => array(
+            'webform_form' => array(
+              'region' => 'middle',
+              'weight' => '-99',
+              'format' => 'nd_webform_render_form',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'title' => array(
+              'region' => 'header',
+              'weight' => '-100',
+              'format' => 'nd_title_h1_nolink',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+          ),
+          'status' => 2,
+          'region_styles' => array(
+            'header' => '',
+            'left' => '',
+            'middle' => '',
+            'right' => '',
+            'footer' => '',
+          ),
+        ),
+      ),
     ),
   );
   return $data;
