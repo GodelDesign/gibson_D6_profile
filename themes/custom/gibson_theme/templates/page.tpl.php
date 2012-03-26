@@ -6,7 +6,21 @@
       $jq = $.noConflict();
     </script>
     
-    <?php print $head ?>
+<style>.page-front {background-image:url('/<?php 
+$front_bg_node = node_get_by_uuid('acc41196-757a-11e1-9767-6793aca74049');
+print_r($front_bg_node->field_background_image[0]['filepath']);
+?>');}
+
+body {background-image:url('/<?php 
+$bg_node = node_get_by_uuid('ae954318-76d9-11e1-bcca-adfbe380d8bb');
+print_r($bg_node->field_background_image[0]['filepath']);
+?>');}
+
+
+</style>
+
+<?php print $head;
+?>
     <?php print $styles ?>
     <title><?php print $head_title ?></title>
   </head>

@@ -39,8 +39,8 @@
 			align: "centre",
 			height: "auto",
 			items: {
-				visible: 3,
-				width: "variable",
+				visible: 8,
+				width: "auto",
 				height: "variable"
 			}, 
 			scroll: {
