@@ -47,7 +47,8 @@ print_r($gallery_name->field_gallery_title[0][\'value\']);
   $handler->display->display_options['fields']['field_gallery_image_fid']['id'] = 'field_gallery_image_fid';
   $handler->display->display_options['fields']['field_gallery_image_fid']['table'] = 'node_data_field_gallery_image';
   $handler->display->display_options['fields']['field_gallery_image_fid']['field'] = 'field_gallery_image_fid';
-  $handler->display->display_options['fields']['field_gallery_image_fid']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_gallery_image_fid']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['field_gallery_image_fid']['alter']['text'] = '<img height = 500 src = "[field_gallery_image_fid]" />';
   $handler->display->display_options['fields']['field_gallery_image_fid']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_gallery_image_fid']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_gallery_image_fid']['alter']['external'] = 0;
@@ -66,7 +67,7 @@ print_r($gallery_name->field_gallery_title[0][\'value\']);
   $handler->display->display_options['fields']['field_gallery_image_fid']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_gallery_image_fid']['link_to_node'] = 0;
   $handler->display->display_options['fields']['field_gallery_image_fid']['label_type'] = 'none';
-  $handler->display->display_options['fields']['field_gallery_image_fid']['format'] = 'gallery-image_default';
+  $handler->display->display_options['fields']['field_gallery_image_fid']['format'] = 'gallery-image_url';
   /* Filter: Node: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';

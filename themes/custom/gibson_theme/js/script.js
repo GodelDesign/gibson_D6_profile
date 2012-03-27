@@ -35,19 +35,19 @@
 		$(view + ' ' + selector).carouFredSel(
 		
 		{
-			width: width,
 			align: "centre",
 			height: "auto",
+			width: "100%",
 			items: {
-				visible: 8,
-				width: "auto",
+				visible: "variable",
+				width: "100%",
 				height: "variable"
 			}, 
 			scroll: {
 				items: 1,
 				event: "click"
 			},
-			auto: true,
+			auto: false,
 			next: {button: ".controls-next"},
 			prev: {button: ".controls-previous"}
 		},
