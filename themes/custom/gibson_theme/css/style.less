@@ -39,9 +39,13 @@ input[type="submit"] {
 /* GLOBALS */
 
 body {
-	background-repeat:repeat;
+	background-repeat:no-repeat;
 	background-attachment:fixed;
-	background-position:top left;
+	background-position:centre centre;
+	-o-background-size: 100% auto, auto;
+	-moz-background-size: 100% auto, auto;
+	-webkit-background-size: 100% auto;
+	background-size:100% auto auto;
 	cursor:default;
 }
 
@@ -85,6 +89,8 @@ body {
 		.menu-link {
 			padding-right:20px;
 			font-size: @fontsize-small;
+			display:block;
+			float:left;
 		}
 	}
 	
@@ -206,7 +212,7 @@ body {
 
 .page-front {
 	
-	background-repeat:repeat;
+/*	background-repeat:repeat;
 	#header {
 		
 		#logo-wrapper {
@@ -238,7 +244,7 @@ body {
 				color:@white;
 			}
 		}
-	}
+	} */
 }
 
 /* Call Me */
@@ -252,7 +258,7 @@ body {
 	
 	#edit-submit {
 		width:100px;
-		background-color:@black;
+		background-color:@grayDark;
 		1:'Georgia', serif;
 		text-transform:uppercase;
 		font-weight:normal;
@@ -276,6 +282,13 @@ body {
 		width:300px;
 		clear:none;
 		margin-bottom:20px;
+		font-family:Georgia, serif;
+	}
+	
+	#edit-submitted-message-wrapper {
+		label {
+			margin-bottom:10px;
+		}
 	}
 
 }

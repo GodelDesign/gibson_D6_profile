@@ -21,7 +21,9 @@ function template_d6_global_user_default_permissions() {
   // Exported permission: access all views
   $permissions['access all views'] = array(
     'name' => 'access all views',
-    'roles' => array(),
+    'roles' => array(
+      '0' => 'staff',
+    ),
   );
 
   // Exported permission: access all webform results
@@ -36,6 +38,7 @@ function template_d6_global_user_default_permissions() {
     'roles' => array(
       '0' => 'anonymous user',
       '1' => 'authenticated user',
+      '2' => 'staff',
     ),
   );
 
@@ -207,15 +210,153 @@ function template_d6_global_user_default_permissions() {
     ),
   );
 
+  // Exported permission: create email content
+  $permissions['create email content'] = array(
+    'name' => 'create email content',
+    'roles' => array(),
+  );
+
+  // Exported permission: create gallery_image content
+  $permissions['create gallery_image content'] = array(
+    'name' => 'create gallery_image content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: create gallery_name content
+  $permissions['create gallery_name content'] = array(
+    'name' => 'create gallery_name content',
+    'roles' => array(),
+  );
+
+  // Exported permission: create gibson_background_image content
+  $permissions['create gibson_background_image content'] = array(
+    'name' => 'create gibson_background_image content',
+    'roles' => array(),
+  );
+
+  // Exported permission: create gibson_page content
+  $permissions['create gibson_page content'] = array(
+    'name' => 'create gibson_page content',
+    'roles' => array(),
+  );
+
+  // Exported permission: create gibson_stockist content
+  $permissions['create gibson_stockist content'] = array(
+    'name' => 'create gibson_stockist content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
   // Exported permission: create url aliases
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(),
   );
 
+  // Exported permission: create webform content
+  $permissions['create webform content'] = array(
+    'name' => 'create webform content',
+    'roles' => array(),
+  );
+
   // Exported permission: delete all webform submissions
   $permissions['delete all webform submissions'] = array(
     'name' => 'delete all webform submissions',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete any email content
+  $permissions['delete any email content'] = array(
+    'name' => 'delete any email content',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete any gallery_image content
+  $permissions['delete any gallery_image content'] = array(
+    'name' => 'delete any gallery_image content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: delete any gallery_name content
+  $permissions['delete any gallery_name content'] = array(
+    'name' => 'delete any gallery_name content',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete any gibson_background_image content
+  $permissions['delete any gibson_background_image content'] = array(
+    'name' => 'delete any gibson_background_image content',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete any gibson_page content
+  $permissions['delete any gibson_page content'] = array(
+    'name' => 'delete any gibson_page content',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete any gibson_stockist content
+  $permissions['delete any gibson_stockist content'] = array(
+    'name' => 'delete any gibson_stockist content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: delete any webform content
+  $permissions['delete any webform content'] = array(
+    'name' => 'delete any webform content',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete own email content
+  $permissions['delete own email content'] = array(
+    'name' => 'delete own email content',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete own gallery_image content
+  $permissions['delete own gallery_image content'] = array(
+    'name' => 'delete own gallery_image content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: delete own gallery_name content
+  $permissions['delete own gallery_name content'] = array(
+    'name' => 'delete own gallery_name content',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete own gibson_background_image content
+  $permissions['delete own gibson_background_image content'] = array(
+    'name' => 'delete own gibson_background_image content',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete own gibson_page content
+  $permissions['delete own gibson_page content'] = array(
+    'name' => 'delete own gibson_page content',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete own gibson_stockist content
+  $permissions['delete own gibson_stockist content'] = array(
+    'name' => 'delete own gibson_stockist content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: delete own webform content
+  $permissions['delete own webform content'] = array(
+    'name' => 'delete own webform content',
     'roles' => array(),
   );
 
@@ -235,6 +376,116 @@ function template_d6_global_user_default_permissions() {
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
     'roles' => array(),
+  );
+
+  // Exported permission: edit any email content
+  $permissions['edit any email content'] = array(
+    'name' => 'edit any email content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit any gallery_image content
+  $permissions['edit any gallery_image content'] = array(
+    'name' => 'edit any gallery_image content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit any gallery_name content
+  $permissions['edit any gallery_name content'] = array(
+    'name' => 'edit any gallery_name content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit any gibson_background_image content
+  $permissions['edit any gibson_background_image content'] = array(
+    'name' => 'edit any gibson_background_image content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit any gibson_page content
+  $permissions['edit any gibson_page content'] = array(
+    'name' => 'edit any gibson_page content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit any gibson_stockist content
+  $permissions['edit any gibson_stockist content'] = array(
+    'name' => 'edit any gibson_stockist content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit any webform content
+  $permissions['edit any webform content'] = array(
+    'name' => 'edit any webform content',
+    'roles' => array(),
+  );
+
+  // Exported permission: edit own email content
+  $permissions['edit own email content'] = array(
+    'name' => 'edit own email content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit own gallery_image content
+  $permissions['edit own gallery_image content'] = array(
+    'name' => 'edit own gallery_image content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit own gallery_name content
+  $permissions['edit own gallery_name content'] = array(
+    'name' => 'edit own gallery_name content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit own gibson_background_image content
+  $permissions['edit own gibson_background_image content'] = array(
+    'name' => 'edit own gibson_background_image content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit own gibson_page content
+  $permissions['edit own gibson_page content'] = array(
+    'name' => 'edit own gibson_page content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit own gibson_stockist content
+  $permissions['edit own gibson_stockist content'] = array(
+    'name' => 'edit own gibson_stockist content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
+  );
+
+  // Exported permission: edit own webform content
+  $permissions['edit own webform content'] = array(
+    'name' => 'edit own webform content',
+    'roles' => array(
+      '0' => 'staff',
+    ),
   );
 
   // Exported permission: edit own webform submissions

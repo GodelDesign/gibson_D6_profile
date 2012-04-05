@@ -39,7 +39,8 @@ function template_d6_global_default_panels_mini() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<span class=\'copyright\'> © 2012 Gibson </span><span class=\'footer-right\'><a href="mailto:email@example.com">JOIN OUR TEAM</a></span>',
+      'body' => '<?php $email_node = node_get_by_uuid(\'adaa186c-7ee9-11e1-8a43-1d802d5f5899\'); ?>
+<span class=\'copyright\'> © 2012 Gibson </span><span class=\'footer-right\'><a href="mailto:<?php print_r($email_node->title); ?>">JOIN OUR TEAM</a></span>',
       'format' => '3',
       'substitute' => TRUE,
     );

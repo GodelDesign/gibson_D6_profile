@@ -66,6 +66,17 @@ function template_d6_global_imagecache_default_presets() {
  */
 function template_d6_global_node_info() {
   $items = array(
+    'email' => array(
+      'name' => t('Email'),
+      'module' => 'features',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'has_body' => '1',
+      'body_label' => t('Body'),
+      'min_word_count' => '0',
+      'help' => '',
+    ),
     'gallery_image' => array(
       'name' => t('Gallery Image'),
       'module' => 'features',
