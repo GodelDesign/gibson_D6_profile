@@ -38,9 +38,40 @@ input[type="submit"] {
 
 /* GLOBALS */
 
+#bg-wrap {
+  overflow:hidden;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+#bg { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 1;
+  display:none;
+}
+
+body>* {
+	z-index:10;
+	position:relative;
+}
+
+.bgwidth { 
+  width: 100%!important;
+  height: auto!important;
+}
+  
+.bgheight { 
+  height: 100%!important;
+  width: auto!important;
+}
+
 body {
-	background: no-repeat center center fixed;
-		-webkit-background-size: cover;
+	-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;

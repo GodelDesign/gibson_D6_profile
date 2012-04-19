@@ -1,3 +1,9 @@
+<?php
+/* declare variables that aren't already provided by the preprocess function */
+$bg_node = ($is_front) ? node_get_by_uuid('acc41196-757a-11e1-9767-6793aca74049') : node_get_by_uuid('ae954318-76d9-11e1-bcca-adfbe380d8bb');
+$bg_path = $bg_node->field_background_image[0]['filepath'];
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
   <head>
@@ -6,15 +12,9 @@
       $jq = $.noConflict();
     </script>
     
-<style>.page-front {background-image:url('/<?php 
-$front_bg_node = node_get_by_uuid('acc41196-757a-11e1-9767-6793aca74049');
-print_r($front_bg_node->field_background_image[0]['filepath']);
-?>');}
+<style>body {background:url('<?php print base_path() . $bg_path; ?>') no-repeat center center fixed;}
 
-body {background-image:url('/<?php 
-$bg_node = node_get_by_uuid('ae954318-76d9-11e1-bcca-adfbe380d8bb');
-print_r($bg_node->field_background_image[0]['filepath']);
-?>');}
+.bg {background:url('') no-repeat center center fixed;}
 
 
 </style>
@@ -24,10 +24,15 @@ print_r($bg_node->field_background_image[0]['filepath']);
     <?php print $styles ?>
     <title><?php print $head_title ?></title>
   </head>
+
+
+
   <body <?php print drupal_attributes($attr) ?>>
 
   <?php print $skipnav ?>
-
+	<div id="bg-wrap">
+<?php print theme('image', $bg_path, '', '', array('id'=>'bg')); ?>
+	</div>
 
 
   <?php if ($header): ?>

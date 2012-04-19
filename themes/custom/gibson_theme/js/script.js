@@ -3,6 +3,25 @@
 	
 	/* NOTICE: define functions here */
 	
+	function emulateBackgroundSizeCoverCSSRuleForIE(){
+		var theWindow = $(window),
+		    $bg = $("#bg"),
+		    aspectRatio = $bg.width() / $bg.height();
+			
+		function resizeBg() {
+			if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+			    $bg.removeClass().addClass('bgheight');
+			} else {
+			    $bg.removeClass().addClass('bgwidth');
+			}
+
+		}
+
+		theWindow.resize(function() {
+			resizeBg();
+		}).trigger("resize");  
+	}
+	
 	function collapsibleStockists(){
 		
 		var stockists = $('.view-gibson-stockists>.view-content>*');
@@ -58,9 +77,18 @@
 		);
 	}
 	
+	function coverBg() {
+		
+	}
+	
 	
 	$(function(){
 		
+	  if($.browser.msie) {
+	    $('#bg').css('display', 'block');
+	    emulateBackgroundSizeCoverCSSRuleForIE();  
+	  }
+	
 		collapsibleStockists();
 		viewSlider('.view-gibson-gallery', '.view-content', '2000');
 		
