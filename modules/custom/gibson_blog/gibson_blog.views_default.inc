@@ -32,7 +32,7 @@ function gibson_blog_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = '';
   $handler->display->display_options['header']['area']['empty'] = FALSE;
-  $handler->display->display_options['header']['area']['content'] = '<h1>Papparazzi</h1>';
+  $handler->display->display_options['header']['area']['content'] = '<h1>Campaign</h1>';
   $handler->display->display_options['header']['area']['format'] = '3';
   $handler->display->display_options['header']['area']['tokenize'] = 0;
   /* Field: Node: Title */
@@ -238,7 +238,7 @@ function gibson_blog_views_default_views() {
   $handler->display->display_options['fields']['created']['hide_empty'] = 0;
   $handler->display->display_options['fields']['created']['empty_zero'] = 0;
   $handler->display->display_options['fields']['created']['hide_alter_empty'] = 1;
-  $handler->display->display_options['path'] = 'papparazzi';
+  $handler->display->display_options['path'] = 'campaign';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Papparazzi';
   $handler->display->display_options['menu']['weight'] = '0';

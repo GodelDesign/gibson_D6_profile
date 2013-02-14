@@ -15,7 +15,9 @@ function template_d6_global_user_default_permissions() {
   // Exported permission: access administration pages
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
-    'roles' => array(),
+    'roles' => array(
+      '0' => 'staff',
+    ),
   );
 
   // Exported permission: access all views
@@ -135,7 +137,9 @@ function template_d6_global_user_default_permissions() {
   // Exported permission: administer nodes
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
-    'roles' => array(),
+    'roles' => array(
+      '0' => 'staff',
+    ),
   );
 
   // Exported permission: administer page manager
@@ -590,7 +594,9 @@ function template_d6_global_user_default_permissions() {
   // Exported permission: use admin toolbar
   $permissions['use admin toolbar'] = array(
     'name' => 'use admin toolbar',
-    'roles' => array(),
+    'roles' => array(
+      '0' => 'staff',
+    ),
   );
 
   // Exported permission: use page manager

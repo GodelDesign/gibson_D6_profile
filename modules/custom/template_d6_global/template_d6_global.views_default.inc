@@ -429,7 +429,7 @@ print_r($gallery_name->field_gallery_title[0][\'value\']);
   $handler->display->display_options['fields']['nothing']['hide_empty'] = 0;
   $handler->display->display_options['fields']['nothing']['empty_zero'] = 0;
   $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = 0;
-  $handler->display->display_options['path'] = 'where-the-partys-at';
+  $handler->display->display_options['path'] = 'stockists';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Where the party\'s at';
   $handler->display->display_options['menu']['weight'] = '0';
