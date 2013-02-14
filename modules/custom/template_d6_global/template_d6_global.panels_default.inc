@@ -40,7 +40,7 @@ function template_d6_global_default_panels_mini() {
       'admin_title' => '',
       'title' => '',
       'body' => '<?php $email_node = node_get_by_uuid(\'adaa186c-7ee9-11e1-8a43-1d802d5f5899\'); ?>
-<span class=\'copyright\'> © 2012 Gibson </span><span class=\'footer-right\'>ENTER HERE TO WIN A $1000 GIBSON WARDROBE</span>
+<span class=\'copyright\'> © 2012 Gibson </span><span class=\'footer-right\'>JOIN US</span>
 <br/>
 <!-- Begin MailChimp Signup Form -->
 <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
