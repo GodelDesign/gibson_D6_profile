@@ -13,16 +13,16 @@ function gibson_primary_menu_block($op = 'list', $delta = 0, $edit = array()) {
         $blockcontent = '';
 		$gallery_title_node = node_get_by_uuid('e0d10b68-7702-11e1-bcca-adfbe380d8bb');
 		$gallery_name = $gallery_title_node->field_gallery_title[0]['value'];
-		
+
 		$blockcontent .= l(t("Don't you know who i am?"), 'content/dont-you-know-who-i-am', array('attributes' => array('class' => 'menu-link m1')));
 		$blockcontent .= l(t($gallery_name), 'gallery', array('attributes' => array('class' => 'menu-link m1')));
-		$blockcontent .= l(t('Papparazzi'), 'papparazzi', array('attributes' => array('class' => 'menu-link m3')));
-		$blockcontent .= l(t("Where the party's at"), 'where-the-partys-at', array('attributes' => array('class' => 'menu-link m4')));
+		$blockcontent .= l(t('Campaign'), 'campaign', array('attributes' => array('class' => 'menu-link m3')));
+		$blockcontent .= l(t("Stockists"), 'stockists', array('attributes' => array('class' => 'menu-link m4')));
 		$blockcontent .= l(t('Call me'), 'content/call-me', array('attributes' => array('class' => 'menu-link m5')));
-			
-	    $block['subject'] = t('');			
+
+	    $block['subject'] = t('');
 	    $block['content'] = $blockcontent;
-	    break;	
+	    break;
   }
 	return $block;
 }

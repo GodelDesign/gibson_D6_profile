@@ -81,6 +81,7 @@
 		
 	}
 	
+	$('.footer-right').click(function(){ $('#mc_embed_signup').slideToggle(); });
 	
 	$(function(){
 		

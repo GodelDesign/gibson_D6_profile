@@ -7,11 +7,11 @@ $bg_path = $bg_node->field_background_image[0]['filepath'];
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="/profiles/gibson_D6_profile/themes/custom/gibson_theme/js/jquery-1.8.2.min.js"></script>
     <script>
       $jq = $.noConflict();
     </script>
-    
+
 <style>body {background:url('<?php print base_path() . $bg_path; ?>') no-repeat center center fixed;}
 
 .bg {background:url('') no-repeat center center fixed;}
@@ -50,7 +50,7 @@ $bg_path = $bg_node->field_background_image[0]['filepath'];
   <?php endif; ?>
 
   <div id='page'><div class='limiter clear-block'>
-	
+
 	  <?php if ($help || ($show_messages && $messages)): ?>
 	    <div id='console'><div class='limiter clear-block'>
 	      <?php print $help; ?>
@@ -65,17 +65,17 @@ $bg_path = $bg_node->field_background_image[0]['filepath'];
     <div id='main' class='clear-block'>
         <?php if ($tabs) print $tabs ?>
         <?php if ($tabs2) print $tabs2 ?>
-        
+
         <?php if ($content_above): ?>
           <div id="content-above" class="clear-block"><?php print $content_above; ?></div>
         <?php endif; ?>
-        
+
         <div id='content' class='clear-block'><?php print $content ?></div>
-        
+
         <?php if ($content_below): ?>
           <div id="content-below" class="clear-block"><?php print $content_below; ?></div>
         <?php endif; ?>
-        
+
     </div>
 
     <?php if ($right): ?>
